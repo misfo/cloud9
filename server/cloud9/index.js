@@ -48,7 +48,9 @@ exports.main = function(options) {
             staticUrl: "/static",
             workspaceId: name,
             name: name,
-            version: options.version
+            version: options.version,
+            requirejsConfig: options.requirejsConfig,
+            plugins: options.plugins
         };
         var ide = new IdeServer(serverOptions, server, exts);
 
